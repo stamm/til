@@ -2,7 +2,7 @@ When postgresql query plan use index, it increment counter on idx_scan.
 
 I find 2 queries to select the biggest unused or little used indexes:
 
-```
+```sql
 SELECT
     schemaname || ‘.’ || relname AS table,
     indexrelname AS index,
@@ -16,7 +16,7 @@ pg_relation_size(i.indexrelid) DESC;
 ```
 
 
-```
+```sql
 SELECT idstat.schemaname AS schema_name,
 idstat.relname AS table_name,
 indexrelname AS index_name,
