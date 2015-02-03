@@ -1,6 +1,7 @@
 If you override method you may must know ruby allowed to call super method. There are 3 different ways:
 
-1) ```super``` without parentheses — call method with same name and automatic forward arguments
+1) ```super``` without parentheses — call method with same name and automatic forward arguments.
+
 If you change value of variables new value will pass to super method.
 
 ```ruby
