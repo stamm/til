@@ -17,6 +17,7 @@ class B < A
     super
   end
 end
+
 B.new.test('first', 'second')
 ```
 
@@ -42,6 +43,7 @@ class B < A
     super
   end
 end
+
 B.new.test('first', 'second')
 ```
 
@@ -53,4 +55,5 @@ second
 ```
 
 2) ```super()``` with no argument — call super method without any argument
+
 3) ```super(a, b)``` you manual call super method with you order variables
