@@ -4,7 +4,7 @@ I find 2 queries to select the biggest unused or little used indexes:
 
 ```sql
 SELECT
-    schemaname || ‘.’ || relname AS table,
+    schemaname || '.' || relname AS table,
     indexrelname AS index,
     pg_size_pretty(pg_relation_size(i.indexrelid)) AS index_size,
     idx_scan as index_scans
